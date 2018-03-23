@@ -1,0 +1,12 @@
+
+{
+  "author": "Anders",
+  "email": "support@anders.fi",
+  "project_name": "Python Package",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "project_short_description": "Python package for...",
+  "initial_version": "0.1.0",
+  "is_it_django_package": ["no", "yes"],
+  "support_python2": ["no", "yes"],
+  "license": ["MIT", "Not open source"]
+}

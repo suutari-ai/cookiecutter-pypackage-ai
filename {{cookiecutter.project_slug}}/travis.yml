@@ -1,0 +1,19 @@
+sudo: false
+language: python
+cache: pip
+
+matrix:
+  include:
+    - {env: TOXENV=style, python: "3.6"}
+    - python: "3.6"
+    - python: "3.5"
+    - python: "3.4"
+{%- if cookiecutter.support_python2 == 'yes' %}
+    - python: "2.7"
+{%- endif %}
+
+install:
+  - pip install tox-travis
+  - pip install -U pip setuptools
+
+script: tox -v
